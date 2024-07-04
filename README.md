@@ -1,6 +1,5 @@
 ## CIC (Dynamical causality under invisible confounders)
 CIC can infer dynamical causality under invisible confounders (CIC method) and further reconstruct the invisible confounders from time-series data.
-CIC implements several causal inference algorithms based on dynamical causality (DC) framework, including Granger causality (GC), Transfer entropy(TE), Convergent Cross Mapping(CCM), Cross-Mapping Entropy(CME), Cross-Mapping Cardinality(CMC), Partial Cross Mapping(PCM), direct CME(DCME) and direct CMC(DCMC).
 
 ### Examples
 #### 1. 3-variable coupled system
@@ -50,6 +49,8 @@ out_s, causal_index, Net_causal=CIC(data,weights,xy_dim,z_dim,hid_dim,embedding_
 
 ```python
 ##compare the inferred causal networks to the ground truth
+#Compare CIC with other eight causal inference algorithms, including Granger causality (GC), Transfer entropy(TE), Convergent Cross Mapping(CCM), Cross-Mapping Entropy(CME), Cross-Mapping Cardinality(CMC), Partial Cross Mapping(PCM), direct CME(DCME) and direct CMC(DCMC).
+
 res_dir = f'/.../logistic3/case/'
 if not os.path.exists(res_dir):
     os.makedirs(res_dir)
