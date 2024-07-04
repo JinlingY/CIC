@@ -75,7 +75,7 @@ for i, method in enumerate(methods):
 
 
 #### 2. reproduce the results in our work
-check the notebook files in [Examples](hhttps://github.com/JinlingY/CIC/tree/master/paper_examples).
+check the notebook files in [Examples](https://github.com/JinlingY/CIC/tree/main/Examples).
 
 
 ### License
