@@ -14,15 +14,17 @@ import matplotlib.pyplot as plt
 from CIC import CIC # import our package
 ```
 
-##### 1.2 simlate 3-variable logistic system using crossmapy
+##### 1.2 simlate 3-variable logistic system using CIC
 ```python
 noise=0.001# noise strength
 beta = 0.35# causal/coupled strength
 num_steps = 1000# length of time series
+
 #Parameters about model
 xy_dim=12 #embedding dimension of the time series
 z_dim=6 #dimension of latent variables
 hid_dim=128 #dimension of hidden layyers
+
 #Data simulations for System 1:x->y
 data=logistic_3_system(rx=3.7, ry= 3.72, rw=3.78, noise=0.005, betaxy= 0, betaxz=0.35, betayx=0, betayz=0.35, num_steps=5000)
 
